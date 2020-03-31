@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Chat_test_Activity"
+    >
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.example.user.androidhive.Chat_test_Activity" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/sendMsgEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="채팅 작성"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/sendMsgBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전송" />
+
+        <TextView
+            android:id="@+id/receiveMsgTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="받은 메세지 표시" />
+    </LinearLayout>
+
+
+</layout>

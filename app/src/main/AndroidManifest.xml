@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.androidhive">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA17S3_DDRaWiPY4JNL52sy6Q65YeURhe0" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Login_confirm_Activity" />
+        <activity
+            android:name=".Main_moim_Activity"
+            android:label="@string/title_activity_main_moim_"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".Make_list_Activity" />
+        <activity android:name=".Moim_Make_Activity" />
+        <activity android:name=".DialogsActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.user.androidhive.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".CalenderDecorate.CalenderActivity" />
+        <activity android:name=".Moim_Confirm_Activity" />
+        <activity android:name=".Moim_modify_Activity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".Search_Confirm_Activity" />
+        <activity android:name=".Searched_Moim_See_Activity" />
+        <activity android:name=".BookMarkActivity" />
+        <activity android:name=".ApplyActivity" />
+        <activity android:name=".Apply_List_Activity" />
+        <activity android:name=".Apply_Modify_Activity" />
+        <activity android:name=".TicketActivity" />
+        <activity android:name=".ChatList_Activity" />
+        <activity android:name=".Members_Activity" />
+        <activity android:name=".ServiceChat_Activity"
+            android:windowSoftInputMode="adjustPan"
+            />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Applicants_management_Activity" />
+        <activity
+            android:name=".CameraView_Activity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Profle_Activity" />
+        <activity
+            android:name=".Filter_Activity"
+            android:label="@string/title_activity_filter_"
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
+        <activity android:name=".Test_Activity" />
+        <activity android:name=".Chat_test_Activity"></activity>
+    </application>
+
+</manifest>

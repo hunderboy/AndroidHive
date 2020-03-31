@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp">
+
+    <ImageView
+        android:id="@+id/Moim_IMG"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img_wifi_lock" />
+
+    <TextView
+        android:id="@+id/spinnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alpha="0.87"
+        android:gravity="left|center"
+        android:paddingLeft="13dp"
+        android:text="모임명"
+        android:textColor="#000"
+        android:textColorHint="#1f000000"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/dropdown_button"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/arrow_down_float" />
+
+</LinearLayout>

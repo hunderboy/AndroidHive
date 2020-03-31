@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+    <!--</group>-->
+
+    <item android:title="MY">
+        <menu>
+            <item
+                android:icon="@drawable/ic_emoticon"
+                android:id="@+id/nav_sub_menu_item01"
+                android:title="내 정보" />
+            <item
+                android:icon="@drawable/ic_emoticon"
+                android:id="@+id/nav_sub_menu_item02"
+                android:title="즐겨찾기" />
+            <item
+                android:icon="@drawable/ic_emoticon"
+                android:id="@+id/nav_sub_menu_item03"
+                android:title="내가 만든 모임" />
+            <item
+                android:icon="@drawable/ic_emoticon"
+                android:id="@+id/nav_sub_menu_item04"
+                android:title="신청 내역" />
+            <item
+                android:id="@+id/nav_sub_menu_item05"
+                android:icon="@drawable/ic_emoticon"
+                android:title="채팅" />
+        </menu>
+    </item>
+
+</menu>

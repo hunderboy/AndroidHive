@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#eeeff3</color>-->
+    <!--<color name="colorPrimaryDark">#303f9f</color>-->
+    <!--<color name="colorAccent">#eeeff3</color>-->
+
+    <!--이미지 필터 관련-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#009688</color>
+    <color name="color_option_menu">#FF3990</color>
+    <color name="filter_label_normal">#8A8889</color>
+    <color name="filter_label_selected">#221F20</color>
+
+</resources>

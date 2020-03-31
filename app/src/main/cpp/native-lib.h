@@ -1,0 +1,8 @@
+//
+// Created by user on 2018-04-07.
+//
+
+#ifndef ANDROIDHIVE_NATIVE_LIB_H
+#define ANDROIDHIVE_NATIVE_LIB_H
+
+#endif //ANDROIDHIVE_NATIVE_LIB_H

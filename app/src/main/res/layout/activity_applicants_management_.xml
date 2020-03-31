@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.androidhive.SearchActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/BackButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+
+
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/backbutton2" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="신청자 관리"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/Applicant_Search_Button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/search_button" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:id="@+id/Search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/Search_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="이름 입력"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/Search_start_Button"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:text="검색" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/State_window"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_gray"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/All_Select_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+
+            app:srcCompat="@drawable/ic_not_check_box" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="신청"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/apply_num_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="Number"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="건"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/Select_Num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="선택된 수 표시"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="140dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="삭제"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/Filter_Spinner"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/No_Applicant_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="해당 모임에 신청자가 없습니다."
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/candidate_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+
+        />
+
+</LinearLayout>
